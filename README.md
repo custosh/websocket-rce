@@ -7,6 +7,8 @@ Please use this code only in a controlled educational environment and within you
 **Do not use this code on real or other people's systems without explicit permission!**
 
 
-# Websocket Remote Commands Execution App
+# Websocket Remote Commands Execution App - Client
 
 Coming soon...
+
+# Websocket Remote Commands Execution App - Admin Panel
