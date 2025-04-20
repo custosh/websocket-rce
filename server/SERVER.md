@@ -60,6 +60,7 @@ This is the server-side component of a remote PC control system, combining **Fla
   "pc_name": "name_of_PC",
   "command": "shell_command_to_execute"
 }
+```
 
 - The command is sent to the specified PC via WebSocket
 - Waits for response with a 30-second timeout
