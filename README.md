@@ -11,7 +11,7 @@ A proof-of-concept WebSocket + Flask based remote command execution system, desi
 
 ---
 
-# Remote Commands Execution App - Client
+# Remote Commands Execution App - Admin Panel
 
 
 ## ✨ Features
@@ -35,15 +35,42 @@ A proof-of-concept WebSocket + Flask based remote command execution system, desi
 
 ---
 
+# Remote Commands Execution App - Client
+
+## ✨ Features
+
+- 🔐 **Encrypted WebSocket Client** – connects using base64-decoded URL  
+- 🧠 **System Monitoring** – collects CPU, RAM, IPs, user, uptime, and more  
+- 📥 **Remote Command Execution** – receives and runs shell commands  
+- 📡 **Data Reporter** – sends system status to server every 30 seconds  
+- 🧩 **Executable Hash Validation** – compares SHA‑256 against API hash  
+- 🕵️‍♂️ **Debugger Detection** – blocks execution inside debuggers  
+
+---
+
+## 📦 Stack
+
+- `Python 3.10+`  
+- `asyncio`, `websockets`, `aiohttp`, `psutil`  
+- `base64`, `subprocess`, `hashlib`, `socket`, `platform`  
+
+---
+
+## 🔄 Client Lifecycle
+
+1. 🔑 Fetch SHA‑256 hash from remote API  
+2. 🛡 Check for debugger and file integrity  
+3. 🔓 Decrypt WebSocket URL and connect  
+4. 📤 Send system info to server every 30s  
+5. 🧾 Await and execute shell commands  
+6. 📨 Send command results back to server  
+
+---
+
 ## 📄 License
 
 This project is licensed under the [Mozilla Public License 2.0](https://www.mozilla.org/en-US/MPL/2.0/).
 
 ---
-# Remote Commands Execution App - Admin Panel
-
-Coming soon...
-
-
 
 > Created by **custosh**
